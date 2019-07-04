@@ -1,0 +1,45 @@
+****************
+* Final Project
+* CS-HU310
+* 07-04-2019
+* Jasmine Young
+**************** 
+
+OVERVIEW:
+
+ Project connects to my database and inserts, update, deletes, and selects data from the database.
+
+
+INCLUDED FILES:
+
+ * Available.java - Object to hold results of ItemsAvailable command
+ * Item.java - Object to hold reference to a row of ITEM table
+ * MYSQLDatabase.java - Sets up database connection
+ * Project.java - Driver class
+ * Purchase.java - Object to hold reference to a row of PURCHASE table
+ * Shipment.java - Object to hold reference to a row of SHIPMENT table
+ * SQL Procedure files
+ * README - this file
+
+
+COMPILING AND RUNNING:
+ From the directory containing all source files, compile the
+driver class (and all dependencies) with the command:
+ $ javac *.java
+
+ Run the compiled class file with the command options:
+ $ java Project CreateItem <itemCode> <itemDescription> <price>
+ $ java Project CreatePurchase <itemCode> <PurchaseQuantity>
+ $ java Project CreateShipment <itemCode> <ShipmentQuantity>  <shipmentDate>
+ $ java Project GetItems <itemCode>
+ $ java Project GetShipments <itemCode>
+ $ java Project GetPurchases <itemCode>
+ $ java Project ItemsAvailable <itemCode>
+ $ java Project UpdateItem <itemCode> <price>
+ $ java Project DeleteItem <itemCode>
+ $ java Project DeletePurchase <itemCode>
+ $ java Project DeleteShipment <itemCode>
+
+ NOTE: Spaces in the command line are used as delimiters. Do not put spaces in parameters. All parameters are required.
+
+ Console output will give the results of commands.

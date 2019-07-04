@@ -1,0 +1,8 @@
+DELIMITER //
+CREATE PROCEDURE get_Item(
+ IN _code varchar(10))
+ 
+BEGIN
+	SELECT * FROM ITEM WHERE ItemCode = _code;
+END //
+DELIMITER ;

@@ -1,0 +1,8 @@
+USE finalProject;
+
+CREATE TABLE PURCHASE (ID int auto_increment,
+ItemID INT NOT NULL,
+Quantity INT NOT NULL,
+PurchaseDate datetime DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (ID),
+FOREIGN KEY (ItemID) REFERENCES ITEM(ID));

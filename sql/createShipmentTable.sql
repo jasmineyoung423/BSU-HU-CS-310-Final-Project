@@ -1,0 +1,8 @@
+USE finalProject;
+
+CREATE TABLE SHIPMENT (ID int auto_increment,
+ItemID INT NOT NULL,
+Quantity INT NOT NULL,
+ShipmentDate date NOT NULL UNIQUE,
+PRIMARY KEY (ID),
+FOREIGN KEY (ItemID) REFERENCES ITEM(ID));
