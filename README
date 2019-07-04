@@ -31,10 +31,10 @@ driver class (and all dependencies) with the command:
  $ java Project CreateItem <itemCode> <itemDescription> <price>
  $ java Project CreatePurchase <itemCode> <PurchaseQuantity>
  $ java Project CreateShipment <itemCode> <ShipmentQuantity>  <shipmentDate>
- $ java Project GetItems <itemCode>
- $ java Project GetShipments <itemCode>
- $ java Project GetPurchases <itemCode>
- $ java Project ItemsAvailable <itemCode>
+ $ java Project GetItems <itemCode or % for all>
+ $ java Project GetShipments <itemCode or % for all>
+ $ java Project GetPurchases <itemCode or % for all>
+ $ java Project ItemsAvailable <itemCode or % for all>
  $ java Project UpdateItem <itemCode> <price>
  $ java Project DeleteItem <itemCode>
  $ java Project DeletePurchase <itemCode>
